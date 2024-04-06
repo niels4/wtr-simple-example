@@ -1,0 +1,43 @@
+:root {
+  --bg-color: hsl(193, 37%, 78%);
+  --text-color: hsl(212, 79%, 29%);
+  --accent-color: hsl(13, 59%, 59%);
+}
+
+body {
+  background: var(--bg-color);
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding-top: 32px;
+}
+
+.main_header {
+  color: var(--text-color);
+  margin: 0;
+}
+
+.main_tagline {
+  color: var(--text-color);
+  margin: 0;
+}
+
+.count_button {
+  background: var(--accent-color);
+  border: none;
+  border-radius: 3px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.count_button:hover {
+  transform: translateY(-1px);
+  background: hsl(from var(--accent-color) h s calc(l * 1.1));
+}
+
+.count_button:active {
+  transform: translateY(1px);
+  background: hsl(from var(--accent-color) h s calc(l * 0.9));
+}
